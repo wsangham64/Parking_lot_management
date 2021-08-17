@@ -1,0 +1,103 @@
+/* <div class="alert alert-primary text-center"  >this issdg sdgsd gsdgsdg sdgs dgsdgsdg sdg warning</div> */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 212, 212);
+}
+.header{
+    background-color: rgba(28, 31, 30, 0.63);
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+    color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.fa-car{
+    margin-right: 20px;
+}
+#back-image{
+    height: 100vh;
+}
+.alerts{
+        width: 50%;
+        margin: 20px auto;
+}
+.details{
+    margin: 20px auto;
+    /* background-color: aqua; */
+    width: 50%;
+    padding: 50px;
+    box-shadow: 1px 0px 8px 1px  rgb(180, 180, 180),
+                inset 1px 0px 8px 1px  rgb(180, 180, 180)
+
+}
+.details label{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+} 
+.details input{
+    background-color: rgb(183, 202, 199);
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    /* margin-top: 5px; */
+    font-size: 21px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.details #owner-name{
+    /* background-color: blue; */
+    width: 100%;
+}
+.details .btn-park{
+    padding: 8px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background-color: rgb(160, 193, 199);
+}
+.details .btn-park:hover{
+    background-color: rgb(150, 181, 187);
+
+}
+ 
+#parking-lot-cars #parking-table{
+    width: 800px;
+    margin: 50px auto;
+}
+
+#delete-btn{
+    background-color: rgb(143, 31, 31);
+    padding: 1px 5px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+@media only screen and (max-width: 600px) {
+    .alerts{
+        width: 90%;
+    }
+   .details{
+       width: 80%;
+   }
+   .details input{
+       width: 100%;
+   }
+   .details input[type=date]{
+       width: 90%;
+   }
+  }

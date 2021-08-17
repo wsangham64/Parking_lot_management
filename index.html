@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section id="back" >
+
+        <div class=" header">
+            <i class="fas fa-car"></i>
+            <i class="fas fa-parking"></i><span>arking</span>
+        </div>
+        <div class="note">
+            <h3 style="text-align: center;margin: 20px;">Park Your Car In Our Parking Lot</h3>
+        </div>
+        <div id="alert1" class="alerts" >
+            
+        </div>
+        <div class=" container details">
+            <form action="" class="get-form">
+                <div class="row">
+                 
+                    <label for="owner-name">Name: <br> <input type="text" placeholder="What's Your Name ?" id="owner-name" ></label>
+
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="car-name">Car: <br> <input type="text" placeholder="What's Your Car Name ?"  id="car-name"></label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="number-plate">License Plate: <br> <input type="text" placeholder="What's Your Palte Nuber ?" id="plate-number" ></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="entry-date">Entry Date: <br><input type="date" name="en-date" id="entry-date"></label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exit-date">Exit Date: <br><input type="date" name="ex-date" id="exit-date"></label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-park" id="part-it" >Park it</button>
+
+            </form>
+        </div>
+
+    </section>
+    <div id="alert2" class="alerts" >
+            
+    </div>
+    <section id="parking-lot-cars" >
+
+        <div class="container" style="overflow-x: scroll;" >
+            <table class="table table-hover" id="parking-table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Car Name</th>
+                    <th scope="col">Plate Number</th>
+                    <th scope="col">Entry Data</th>
+                    <th scope="col">Exit Data</th>
+                    <th scope="col">   </th>
+                  </tr>
+                </thead>
+                <tbody id="addCar">
+                        <!-- <tr>
+                            <td>0</td>
+                        <td>sangharatn</td>
+                        <td>honda</td>
+                        <td>897568</td>
+                        <td>15/05/2000</td>
+                        <td>16/05/2000</td>
+                        <td><button id="delete-btn" ><i class="fas fa-times"></i></button></td>
+                        </tr> -->
+                </tbody>
+              </table>
+        </div>
+
+    </section>
+
+        <script src="script/script.js"></script>
+</body>
+</html>
